@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <audio id="song">
+            <source src="song.mp3">
+        </audio>
+        <link rel="stylesheet" href="style.css" />
+        <title>Happy Valentine's Day</title>
+    </head>
+    
+    <body>
+        <div id="overlay" onclick="off(); playAudio()">
+            <div id="text">Ready?</div>
+        </div>
+        
+        <div class="vdayCard">
+            <div class="cardFront">
+                <h3 class="happy">HAPPY VALENTINE'S DAY</h3>
+                <div class="heart">
+                    <div class="heart-1"></div>
+                    <div class="heart-2"></div>
+                    <div class="heart-3"></div>
+                    <div class="heart-4"></div>
+                    <div class="heart-5"></div>
+                    <div class="heart-6"></div>
+                </div>
+            </div>
+      
+            <div class="cardInside">
+                <h3 class="back">HAPPY VALENTINE'S DAY</h3>
+                <p>Dear loml,</p>
+                <p>You make me feel like dancing as if nobody was watching ♡ love you and your Tim boogie mucho</p>
+                <video width="240" height="266" autoplay loop src= "groot.mp4" type="video/mp4" muted class="vid"></video> 
+                <p>xoxo, your loml</p>
+                <p>p.s. don't let Groot see you watching him ;)</p>
+            </div>
+                
+            <script> 
+                function off() {
+                    document.getElementById("overlay").style.display = "none";
+                }
+
+
+                function playAudio() { 
+                    document.getElementById("song").play(); 
+                } 
+        
+		
+                // DON'T LET GROOT SEE YOU WATCHING HIM DANCING 
+                let clip = document.querySelector(".vid") 
+
+                clip.addEventListener("mouseover", function (e) { 
+                    clip.pause(); 
+                }) 
+
+                clip.addEventListener("mouseout", function (e) { 
+                    clip.play(); 
+                }) 
+                
+                // A story:
+                // Once upon a time, a Canadian girl decided to go on an exchange during her last year of university to
+                // a school in Singapore: SUTD. Unbeknownst to her, a Belgian boy had also decided to go on Erasmus to
+                // the same school at the same time. What began as a group dinner between many friends, turned into a more
+                // private swim at the outdoor pool, and into an even more private conversation at a Rec Room. What would
+                // have already been an amazing once-in-a-lifetime experience, became even more meaningful because of the 
+                // unexpected connection that had been formed. This Valentine's day is one month shy of a 1.5 year anniversary
+                // between 2 people who would never have expected to find love in a new country and go through the ups and
+                // downs of life together. 
+                
+            </script> 
+        </div>
+        
+        
+    </body>
+</html>
