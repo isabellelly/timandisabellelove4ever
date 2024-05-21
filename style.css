@@ -162,7 +162,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,25);
   z-index: 2;
   cursor: pointer;
 }
@@ -172,7 +172,7 @@ p {
   top: 40%;
   left: 50%;
   font-size: 50px;
-  color: white;
+  color: black;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
 }
